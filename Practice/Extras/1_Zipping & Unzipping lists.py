@@ -23,3 +23,27 @@ print(zip_object)
 # Unpacking the zip object
 for value1,value2,value3 in zip_object:
     print("\nName is : " , value1 , "\nWeight is : ",value2,"\nAge is : ",value3)
+
+
+# Unzipping means converting the zipped values back to the individual self as they were.
+# This is done with the help of “*” operator. So now, if we want to put the old values into
+# result1 and result2 from zipped list zip1, then we have to unzip zip1.
+
+print("\nUnziping a ziped object using '*':\n")
+
+surnames = ["Arain", "Abbasi","Mirani" ,"Pathan"]
+# Create a zip object from name and surname: z1
+zip1 = zip (names,surnames)
+
+# Print the tuples in z1 by unpacking with *
+print("Names with Surnames: ",*zip1)
+# Re-create a zip object from mutants and powers: z1
+z1 = zip(names,surnames)
+
+# 'Unzip' the tuples in z1 by unpacking with * and zip(): result1, result2
+result1, result2 = zip(*z1)
+
+# Check if unpacked tuples are equivalent to original tuples
+print("Names : ",result1)
+print("Surnames : ",result2)
+
