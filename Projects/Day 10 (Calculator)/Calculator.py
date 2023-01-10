@@ -44,7 +44,7 @@ def menu():
 def select_op_and_num ():
     print("Select an operation for further calculation on previous answer: ")
     operator = menu()
-    next_number = int(input("Enter next number: "))
+    next_number = float(input("Enter next number: "))
 
     return  operator,next_number
 
@@ -79,8 +79,8 @@ def Main():
     operator = menu()
 
     # Getting inputs
-    number_1 = int(input('Enter first number: '))
-    number_2 = int(input('Enter second number: '))
+    number_1 = float(input('Enter first number: '))
+    number_2 = float(input('Enter second number: '))
 
     # Now when I provide operator as a key to dictionary to retrieve it's value
     # from the dictionary a whole function will be retrieved
