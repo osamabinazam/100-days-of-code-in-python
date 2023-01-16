@@ -2,7 +2,6 @@
 # A dictionary can have a dictionary/dictionaries associated with a key
 # The key must be of any type
 # The value can be a dictionary, list , etc
-
 cars = {
     1:{
         "Name": "Ford",
@@ -21,7 +20,6 @@ cars = {
         "Electric":True
     }
 }
-
 print("Nested Dictionary is : ", cars)
 
 # Accessing item in the nested Dictionary
