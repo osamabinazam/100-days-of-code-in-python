@@ -11,18 +11,33 @@ myfile.close()                                                  # close the file
 print("Type of myfile.read() is : ", type(content))             # return String Object
 print("Content of the file is : \n" ,content)
 
-# Optimum and Orgranized way
+# Optimum and Orgranized way in which we don't have to close file object manually
 # Process file here and then close
 with open("fruits.txt" , mode="r") as myfile:
     content = myfile.read()
-    myfile.close()
+
 
 print("\nContent of the file is : \n", content)
 
 # Writing content to file
-# If file is exist then the content of the file will be overridden
+# "w" -> If file is exist then the content of the file will be overridden
+# "x" -> If file is exist then an error will be thrown
 with open("vagetables.txt" , mode="w") as myfile:
     myfile.write("Tomato\nCarrot\nBringle")
 
+
+# Appending content to file
+# "a" -> use to append con tent to the file and updates it
+with open("vagetables.txt" , "a") as myfile:
+    myfile.write("\nGarlic")
+
+del myfile
+# we can not read from and write to file using same object.
+# To do so, we use "a+" mode which let us write/read operation on a same object
+# we also use seek() method that let us change the position of the cursur
+with open("fruits.txt" ,"a+") as myfile:
+    myfile.write("\nWatermelon")
+    content = myfile.read()
+print("The content of the file is : " , content)
 
 
