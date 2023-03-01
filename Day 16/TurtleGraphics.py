@@ -21,6 +21,7 @@ alexaTurtle.left(90)
 alexaTurtle.forward(200)
 alexaTurtle.left(90)
 alexaTurtle.forward(200)
+graphicWindow.exitonclick()
 
 # Creating instance variable salary
 alexaTurtle.salary = 5000
