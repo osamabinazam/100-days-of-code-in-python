@@ -9,8 +9,8 @@ print("Type of Array is : ",array.dtype)
 print("Type of Object is :", type(array))
 print("Numpy Version is : ",np.__version__)
 
-# we can pass list, tupple or any array like object to array
-# array of lists
+# we can pass list, tuple or any array like object to array
+#  of lists
 listsArray = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(listsArray)
 
